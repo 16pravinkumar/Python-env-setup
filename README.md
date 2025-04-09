@@ -1,5 +1,32 @@
 # Python-env-setup
 
-<pre> ```bash # Shows the installed Python version python --version # Runs the Python file named script.py python script.py # Installs the specified Python package pip install package_name # Lists all installed Python packages pip list # Creates a virtual environment python -m venv env_name # Activates the virtual environment (Windows) .\env_name\Scripts\activate # Deactivates the virtual environment deactivate # Saves current packages to a file pip freeze > requirements.txt # Installs packages listed in requirements.txt pip install -r requirements.txt # Checks type hints using mypy (if installed) mypy file.py ``` </pre>
+<pre><code>python --version</code></pre>
+Displays the installed Python version.
 
+<pre><code>python script.py</code></pre>
+Runs the Python script named script.py.
+
+<pre><code>pip install package_name</code></pre>
+Installs the specified Python package.
+
+<pre><code>pip list</code></pre>
+Lists all installed Python packages.
+
+<pre><code>python -m venv env_name</code></pre>
+Creates a virtual environment named env_name.
+
+<pre><code>.\env_name\Scripts\activate</code></pre>
+Activates the virtual environment on Windows.
+
+<pre><code>deactivate</code></pre>
+Deactivates the currently active virtual environment.
+
+<pre><code>pip freeze > requirements.txt</code></pre>
+Exports the list of installed packages to requirements.txt.
+
+<pre><code>pip install -r requirements.txt</code></pre>
+Installs all packages listed in requirements.txt.
+
+<pre><code>mypy file.py</code></pre>
+Checks type hints in file.py using mypy (if installed).
 
