@@ -5,7 +5,6 @@
 
 A simple cheat sheet to set up and manage your Python environment effectively.
 
----
 ```
 
 ---
@@ -82,7 +81,5 @@ mypy file.py
 
 > ⚠️ `mypy` must be installed (`pip install mypy`) to use this command.
 
----
-```
 
 
