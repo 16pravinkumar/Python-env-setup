@@ -36,7 +36,7 @@ pip list
 ## 🧪 Create a Virtual Environment
 
 ```bash
-virtualenv env_name
+virtualenv env
 ```
 
 ---
@@ -44,7 +44,7 @@ virtualenv env_name
 ## 🔛 Activate Virtual Environment (Windows)
 
 ```bash
-.\env_name\Scripts\activate
+.\env\Scripts\activate
 ```
 
 ---
