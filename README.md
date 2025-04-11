@@ -49,12 +49,6 @@ virtualenv env
 
 ---
 
-## 🔚 Deactivate Virtual Environment
-
-```bash
-deactivate
-```
-
 ---
 
 ## 📤 Export Installed Packages
@@ -69,6 +63,12 @@ pip freeze > requirements.txt
 
 ```bash
 pip install -r requirements.txt
+```
+
+## 🔚 Deactivate Virtual Environment
+
+```bash
+deactivate
 ```
 
 ---
