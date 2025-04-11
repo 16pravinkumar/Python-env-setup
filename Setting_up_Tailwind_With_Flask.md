@@ -85,6 +85,39 @@ Run the following command to compile Tailwind and output to `static/css/styles.c
 npx tailwindcss -i ./static/src/input.css -o ./static/css/styles.css --watch
 ```
 
+---
+
+## 🛠️ 5.1 Add Tailwind CLI Script to `package.json`
+
+Open your `package.json` and inside the `"scripts"` section, add:
+
+```json
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "tailwind": "npx tailwindcss -i ./static/src/input.css -o ./static/css/styles.css --watch"
+}
+```
+
+> You can rename `"tailwind"` to anything you like — e.g., `"dev"`, `"build-css"`, etc.
+
+---
+
+## 🚀 Run the Script
+
+Now, instead of typing the full CLI command every time, just run:
+
+```bash
+npm run tailwind
+```
+
+This will start the Tailwind compiler in watch mode and automatically rebuild your CSS when HTML or JS files change.
+
+---
+
+
+
+
+
 The `--watch` flag rebuilds CSS automatically on changes.
 
 ---
@@ -95,6 +128,10 @@ In your `templates/index.html` or base layout file, include:
 
 ```html
 <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+Example :
+  <link rel="stylesheet" href="/static/css/styles.css">
+
 ```
 
 ---
