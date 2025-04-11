@@ -6,11 +6,6 @@
 A simple cheat sheet to set up and manage your Python environment effectively.
 
 ---
-
-## ✅ Check Python Version
-
-```bash
-python --version
 ```
 
 ---
@@ -88,8 +83,6 @@ mypy file.py
 > ⚠️ `mypy` must be installed (`pip install mypy`) to use this command.
 
 ---
-
-
 ```
 
 
