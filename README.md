@@ -9,14 +9,6 @@ A simple cheat sheet to set up and manage your Python environment effectively.
 
 ---
 
-## ▶️ Run a Python Script
-
-```bash
-python script.py
-```
-
----
-
 ## 📦 Install a Package
 
 ```bash
@@ -47,7 +39,11 @@ virtualenv env
 .\env\Scripts\activate
 ```
 
----
+## ▶️ Run a Python Script
+
+```bash
+python app.py
+```
 
 ---
 
