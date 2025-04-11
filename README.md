@@ -1,32 +1,95 @@
-# Python-env-setup
 
-Displays the installed Python version.
-<pre><code>python --version</code></pre>
 
-Runs the Python script named script.py.
-<pre><code>python script.py</code></pre>
+```markdown
+# 🐍 Python Environment Setup Guide
 
-Installs the specified Python package.
-<pre><code>pip install package_name</code></pre>
+A simple cheat sheet to set up and manage your Python environment effectively.
 
-Lists all installed Python packages.
-<pre><code>pip list</code></pre>
+---
 
-Creates a virtual environment named env_name.
-<pre><code>virtualenv env_name</code></pre>
+## ✅ Check Python Version
 
-Activates the virtual environment on Windows.
-<pre><code>.\env_name\Scripts\activate</code></pre>
+```bash
+python --version
+```
 
-Deactivates the currently active virtual environment.
-<pre><code>deactivate</code></pre>
+---
 
-Exports the list of installed packages to requirements.txt.
-<pre><code>pip freeze > requirements.txt</code></pre>
+## ▶️ Run a Python Script
 
-Installs all packages listed in requirements.txt.
-<pre><code>pip install -r requirements.txt</code></pre>
+```bash
+python script.py
+```
 
-Checks type hints in file.py using mypy (if installed).
-<pre><code>mypy file.py</code></pre>
+---
+
+## 📦 Install a Package
+
+```bash
+pip install package_name
+```
+
+---
+
+## 📋 List All Installed Packages
+
+```bash
+pip list
+```
+
+---
+
+## 🧪 Create a Virtual Environment
+
+```bash
+virtualenv env_name
+```
+
+---
+
+## 🔛 Activate Virtual Environment (Windows)
+
+```bash
+.\env_name\Scripts\activate
+```
+
+---
+
+## 🔚 Deactivate Virtual Environment
+
+```bash
+deactivate
+```
+
+---
+
+## 📤 Export Installed Packages
+
+```bash
+pip freeze > requirements.txt
+```
+
+---
+
+## 📥 Install Packages from requirements.txt
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🧠 Type Checking with mypy
+
+```bash
+mypy file.py
+```
+
+> ⚠️ `mypy` must be installed (`pip install mypy`) to use this command.
+
+---
+
+
+```
+
 
