@@ -136,12 +136,12 @@ Example :
 
 ---
 
-### ▶️ 7. Run Flask App
+### ▶️ 7. Run python App
 
-Now you can run your Flask app as usual:
+Now you can run your python app as usual:
 
 ```bash
-flask run
+pyrhon app.py
 ```
 
 And Tailwind styles will be applied to your templates!
