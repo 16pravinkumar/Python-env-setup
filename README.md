@@ -44,6 +44,26 @@ virtualenv env
 ```bash
 python app.py
 ```
+---
+## Write down this basic route setup in app.py
+
+```bash
+# Importing necessary modules from the Flask package
+from flask import Flask, render_template, request
+
+# Creating a Flask application instance
+app = Flask(__name__)
+
+# Defining the route for the homepage ('/') and the corresponding view function
+@app.route('/')
+def index():
+    return "Hello World"  # Returns a simple response when the homepage is accessed
+
+# This ensures the app runs only when this script is executed directly (not imported)
+if __name__ == "__main__":
+    app.run(debug=True)  # Starts the Flask development server with debug mode ON
+
+```
 
 ---
 
