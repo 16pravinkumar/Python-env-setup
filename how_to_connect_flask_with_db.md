@@ -1,7 +1,6 @@
 ✅ Folder Structure
-pgsql
-Copy
-Edit
+```
+bash
 todo-flask-app/
 │
 ├── app.py                 ← Main Flask app
@@ -14,6 +13,9 @@ todo-flask-app/
 │   └── (css, js, images)  ← Public assets if needed
 ├── README.md              ← Instructions
 └── requirements.txt       ← (Optional - Python dependencies)
+```
+
+```
 📄 create_db.py — Database Creator
 python
 Copy
@@ -22,7 +24,9 @@ from app import db
 db.create_all()
 print("✅ Database created successfully!")
 This script imports the db object from app.py and calls create_all() which creates the todo.db file with the Todo table inside.
+```
 
+```
 📝 README.md
 markdown
 Copy
@@ -30,13 +34,13 @@ Edit
 # 📝 Flask Todo App (with SQLAlchemy)
 
 A simple Flask To-Do app using SQLite and SQLAlchemy as the ORM.
-
+```
 ---
 
 ## 📁 Folder Structure
-
+```
 todo-flask-app/ ├── app.py # Main Flask app ├── create_db.py # Script to initialize the database ├── todo.db # (Auto-generated SQLite DB) ├── templates/ │ └── index.html # HTML file rendered by Flask ├── static/ # Public assets (CSS/JS/images) └── README.md # Project setup instructions
-
+```
 yaml
 Copy
 Edit
