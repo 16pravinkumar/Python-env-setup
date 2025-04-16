@@ -141,7 +141,7 @@ Example :
 Now you can run your python app as usual:
 
 ```bash
-pyrhon app.py
+python app.py
 ```
 
 And Tailwind styles will be applied to your templates!
