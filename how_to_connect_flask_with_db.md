@@ -45,6 +45,9 @@ pip install Flask flask_sqlalchemy
 > You can save dependencies later using:
 ```bash
 pip freeze > requirements.txt
+
+This command is used to install all the packages which are there in the projects which you are cloning
+pip install -r requirements.txt
 ```
 
 ---
