@@ -45,5 +45,21 @@ Run it at: http://localhost:4200
 ```
 
 
+# All about each file or folder used 
+```
+#📦 What is package.json?
+package.json is like the brain or info card of your Angular (or any Node.js) project.
 
+It keeps track of:
+
+What your project is called
+
+Which version it is
+
+What tools and libraries it uses
+
+What commands (scripts) it can run
 tsconfig.spec.json
+
+    
+```
