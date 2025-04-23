@@ -14,15 +14,6 @@ npm install -g @angular/cli
 
 This installs the Angular CLI globally so you can use it from anywhere on your system.
 
-### 💬 Great question! Here's the quick and clear answer:
-
-**No, you do NOT need to use `-g` (global install) for every Angular project.**
-
-#### ✅ What `-g` Means:
-When you run:
-```bash
-npm install -g @angular/cli
-```
 You're installing the Angular CLI globally on your system. That means you can now use `ng` commands like `ng new`, `ng serve`, etc., from anywhere in your terminal — for any project.
 
 #### 💡 What to do in future projects:
