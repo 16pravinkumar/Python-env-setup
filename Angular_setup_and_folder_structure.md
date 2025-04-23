@@ -136,8 +136,8 @@ That’s it! You’ve created your first Angular app and learned what each impor
 ---
 > 💡 *Tip:* Bookmark [Angular Docs](https://angular.io/docs) for deeper learning and best practices.
 
-## How To use loops in Angular
-# create a file name app.component.html add this code inside it:
+# How To use loops in Angular
+## create a file name **app.component.html** add this code inside it:
 ```
 @for(user of users; track user; let id=$index){
   <div class="user-info">{{id}}</div>
@@ -148,7 +148,7 @@ That’s it! You’ve created your first Angular app and learned what each impor
   }
 }
 ```
-# create a file name app.component.ts add this code inside it:
+## create a file name **app.component.ts** add this code inside it:
 ```
 import { Component } from '@angular/core';
 
