@@ -183,11 +183,13 @@ export class ToggleElementsComponent {
 
 # All About Signals
 ### What is signal 
- `A signal is a wrapper around a value 
+ A signal is a wrapper around a value 
   That give a signal when value changes
   ```
+Signal Method
 count = signal(10)
+
 normal method
 count = 10 
 ```
- `
+ 
