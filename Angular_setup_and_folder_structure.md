@@ -135,3 +135,48 @@ That’s it! You’ve created your first Angular app and learned what each impor
 
 ---
 > 💡 *Tip:* Bookmark [Angular Docs](https://angular.io/docs) for deeper learning and best practices.
+
+## How To use loops in Angular
+# create a file name app.component.html add this code inside it:
+```
+@for(user of users; track user; let id=$index){
+  <div class="user-info">{{id}}</div>
+  <div>{{ user.name }}</div>
+  <div>{{ user.age }}</div>
+  @for(role of user.roles; track role){
+    <div>{{ role }}</div>
+  }
+}
+```
+# create a file name app.component.ts add this code inside it:
+```
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-toggle-elements',
+  imports: [],
+  templateUrl: './toggle-elements.component.html',
+  styleUrl: './toggle-elements.component.css',
+})
+export class ToggleElementsComponent {
+  
+  users = [
+    {
+      name: 'Alice',
+      age: 30,
+       roles: ['Engineer','Designer'],
+    },
+    {
+      name: 'Bob',
+      age: 25,
+       roles: ['Designer'],
+    },
+    {
+      name: 'Charlie',
+      age: 28,
+       roles: ['Developer'],
+    },
+  ];
+}
+
+```
