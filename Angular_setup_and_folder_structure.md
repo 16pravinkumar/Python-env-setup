@@ -14,6 +14,33 @@ npm install -g @angular/cli
 
 This installs the Angular CLI globally so you can use it from anywhere on your system.
 
+### 💬 Great question! Here's the quick and clear answer:
+
+**No, you do NOT need to use `-g` (global install) for every Angular project.**
+
+#### ✅ What `-g` Means:
+When you run:
+```bash
+npm install -g @angular/cli
+```
+You're installing the Angular CLI globally on your system. That means you can now use `ng` commands like `ng new`, `ng serve`, etc., from anywhere in your terminal — for any project.
+
+#### 💡 What to do in future projects:
+Once you’ve done the global install once, for any new Angular project you just need to do:
+
+```bash
+ng new my-next-project
+cd my-next-project
+ng serve
+```
+**No need to repeat `-g`.**
+
+#### 🔁 When to reinstall with `-g`:
+Only reinstall globally if:
+- You switch to another computer or OS
+- Your global CLI gets corrupted
+- You want to upgrade the Angular CLI globally (use `npm install -g @angular/cli@latest`)
+
 ---
 
 ## ✅ Step 2: Create a New Angular App
@@ -116,4 +143,4 @@ It:
 That’s it! You’ve created your first Angular app and learned what each important file does. Keep building and exploring 🚀
 
 ---
-> 💡 *Tip:* Bookmark [Angular Docs](https://angular.io/docs) for deeper learning and best practices.xx
+> 💡 *Tip:* Bookmark [Angular Docs](https://angular.io/docs) for deeper learning and best practices.
