@@ -78,6 +78,24 @@ class Person {
 
 const person = new Person("John", 25);
 person.greet(); // Hello, my name is John
+
+
+
+giving default value 
+class MakeData {
+  constructor(
+    public name: string,
+    public gender: string = "Other",
+    public age: number
+  ) {
+    if (!gender) {
+      this.gender = "other";
+    }
+  }
+}
+
+let m1 = new MakeData("Pr", "", 12);
+console.log(m1);
 ```
 
 ---
