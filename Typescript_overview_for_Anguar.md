@@ -98,6 +98,44 @@ let m1 = new MakeData("Pr", "", 12);
 console.log(m1);
 ```
 
+## Example for private
+```ts
+class MakeData {
+  constructor(
+    private name: string,
+    public gender: string = "Other",
+    public age: number
+  ) {}
+
+
+  getName(){
+    return this.name
+  }
+
+  setName(name: string): void {
+    this.name = name;
+  }
+
+
+}
+
+class MakeMoreData extends MakeData {
+  constructor(name: string,gender:string, age: number,public extraData: string) {
+    super(name,gender,age)
+  }
+
+  showAllData():void{
+    console.log(`Name: ${this.getName()}, Gender: ${this.gender}, Age: ${this.age}, Extra: ${this.extraData}`);
+  }
+}
+
+let m1 = new MakeMoreData("Pr","M",52,
+'finalDara'
+);
+m1.setName("NEwNAjs")
+m1.showAllData()
+```
+
 ---
 
 ## 🔧 Functions
