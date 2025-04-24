@@ -1,8 +1,6 @@
 Sure! Here's a README.md template for TypeScript topics that are essential for Angular. This includes an explanation of each concept, along with small examples, so it’s perfect for learning or reference.
 
-md
-Copy
-Edit
+
 # TypeScript for Angular: Essential Topics
 
 ## Introduction
@@ -35,9 +33,6 @@ Interfaces
 interfaces define the shape of an object, providing better code clarity and structure. In Angular, interfaces are commonly used for defining data models and services.
 
 Example:
-ts
-Copy
-Edit
 interface User {
   name: string;
   age: number;
@@ -49,9 +44,6 @@ const user: User = {
 };
 You can extend an interface:
 
-ts
-Copy
-Edit
 interface Admin extends User {
   role: string;
 }
@@ -65,9 +57,7 @@ Classes & Objects
 Classes are blueprints for creating objects. TypeScript uses classes with type safety and can include constructors, methods, and properties.
 
 Example:
-ts
-Copy
-Edit
+
 class Person {
   name: string;
   age: number;
@@ -88,9 +78,7 @@ Functions
 Functions can also have type annotations for parameters and return types in TypeScript. This helps in ensuring that function signatures are correct.
 
 Example:
-ts
-Copy
-Edit
+
 function add(a: number, b: number): number {
   return a + b;
 }
@@ -98,9 +86,7 @@ function add(a: number, b: number): number {
 console.log(add(2, 3)); // Output: 5
 You can also use optional parameters and default values:
 
-ts
-Copy
-Edit
+
 function greet(name: string, greeting: string = "Hello"): void {
   console.log(`${greeting}, ${name}!`);
 }
@@ -111,9 +97,7 @@ Generics
 Generics allow you to create reusable components that work with any data type, ensuring type safety across your app. In Angular, you’ll frequently use generic services and components.
 
 Example:
-ts
-Copy
-Edit
+
 function identity<T>(arg: T): T {
   return arg;
 }
@@ -122,9 +106,7 @@ const result = identity("Hello, TypeScript!");
 console.log(result); // Output: Hello, TypeScript!
 For generic classes:
 
-ts
-Copy
-Edit
+
 class Box<T> {
   value: T;
   constructor(value: T) {
@@ -142,9 +124,7 @@ Enums
 enums are a way to define a set of named constants. They can be numeric or string-based, and are useful in situations where you want to limit values to a predefined set.
 
 Example:
-ts
-Copy
-Edit
+
 enum Role {
   Admin = "Admin",
   User = "User",
@@ -157,9 +137,7 @@ Decorators
 Decorators are a TypeScript feature used in Angular for annotating and modifying classes, methods, properties, or parameters. They are commonly used in Angular for services, components, and directives.
 
 Example:
-ts
-Copy
-Edit
+
 function log(target: any, key: string) {
   console.log(`Method ${key} was called`);
 }
@@ -176,9 +154,7 @@ person.greet(); // Logs: Method greet was called
 In Angular, decorators like @Component(), @Injectable(), @NgModule() are used to define components, services, and modules.
 
 Example:
-ts
-Copy
-Edit
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -190,9 +166,7 @@ Modules & Namespaces
 Modules are a way to organize code into separate files, while namespaces allow you to group related types and functions into a container.
 
 Example of Module:
-ts
-Copy
-Edit
+
 // user.ts
 export class User {
   name: string;
@@ -206,9 +180,7 @@ import { User } from './user';
 const user = new User("Pravin");
 console.log(user.name); // Output: Pravin
 Example of Namespace:
-ts
-Copy
-Edit
+
 namespace Shapes {
   export class Circle {
     constructor(public radius: number) {}
