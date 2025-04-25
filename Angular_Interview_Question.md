@@ -144,7 +144,7 @@ export const environment = {
 ```
 
 
-Interview Questions on Interpolation in Angular
+# Interview Questions on Interpolation in Angular
 
 1. What is interpolation in Angular? <br>
 **Answer**: Interpolation in Angular is a mechanism for binding data from the component to the template. It allows dynamic content to be inserted into the HTML by wrapping the expression in double curly braces {{ expression }}.
@@ -186,7 +186,7 @@ export class AppComponent {
 `<a [href]="url">Go to URL</a> <!-- Property binding is used for attributes -->`
 
 4. What happens if the interpolated expression evaluates to null or undefined? <br>
-Answer: If the interpolated expression evaluates to null or undefined, Angular will render an empty string. This avoids breaking the HTML or causing errors in the view.
+**Answer**: If the interpolated expression evaluates to null or undefined, Angular will render an empty string. This avoids breaking the HTML or causing errors in the view.
 
 **Example**:
 ```ts
