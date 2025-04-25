@@ -430,19 +430,20 @@ This command creates a new folder containing .ts, .html, .css, and .spec.ts file
 The @Component() decorator is used to define an Angular component and its metadata like selector, template, and styles.
 
 Example:
- 
+ ```
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.css']
 })
+```
 export class HeroComponent {}
 4️⃣ What is the purpose of the selector property?
 **Answer**:
 The selector defines the custom HTML tag that is used to render the component in templates.
 
 Example Usage:
-
+```
 <!-- If selector is 'app-hero' -->
 <app-hero></app-hero>
 ✅ Bonus Tip: Component Structure Overview
@@ -454,6 +455,7 @@ src/
 │   │   ├── hero.component.html    # Component view
 │   │   ├── hero.component.css     # Component styles
 │   │   └── hero.component.spec.ts # Unit tests
+```
 ```# 1️⃣ What is a component in Angular?
 
 ****Answer**:**  
@@ -480,7 +482,7 @@ This command creates a new folder containing .ts, .html, .css, and .spec.ts file
 The @Component() decorator is used to define an Angular component and its metadata like selector, template, and styles.
 
 Example:
- 
+ ```
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
@@ -490,10 +492,11 @@ export class HeroComponent {}
 4️⃣ What is the purpose of the selector property?
 **Answer**:
 The selector defines the custom HTML tag that is used to render the component in templates.
-
+```
 Example Usage:
 
 <!-- If selector is 'app-hero' -->
+```
 <app-hero></app-hero>
 ✅ Bonus Tip: Component Structure Overview
  
