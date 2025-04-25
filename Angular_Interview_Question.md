@@ -537,6 +537,45 @@ export class AppComponent {
     this.display = data;
   }
 }
+```
 
+# If there is multiple input data then use this method 
+
+```bash
+.html
+
+<p>Your name is from getData:{{userName}}</p>
+<p>Your name is from getData:{{userGmail}}</p>
+
+
+<input type="text" placeholder="name" #inputData >
+<input type="text" placeholder="Email" #inputData2 >
+<button (click)="getData(inputData.value, inputData2.value)">Get Data </button>
+
+.ts
+  import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
+})
+export class AppComponent {
+  userName = '';  
+  userGmail = ''; 
+
+  
+  getData(userName: string, userEmail: string) {
+    this.userName = userName;
+    this.userGmail = userEmail;
+
+
+    console.log({
+      name: userName,
+      email : userEmail
+    });
+    
+  }
+}
 
 ```
