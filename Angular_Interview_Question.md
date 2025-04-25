@@ -30,8 +30,7 @@ export class AppComponent {
 # 📁 Angular Folder Structure & File Responsibilities
 Understanding the Angular folder structure is crucial for real-world development and interviews. Below are common questions and their answers.
 
-1. What is the structure of an Angular application?
-
+1. What is the structure of an Angular application? <br>
 **Answer**:
 An Angular app follows a modular structure with the following key folders and files:
 ```ts
