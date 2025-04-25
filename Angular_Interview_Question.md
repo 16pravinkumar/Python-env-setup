@@ -396,6 +396,67 @@ ng generate service my-service --skip-tests
 Prevents the generation of a `.spec.ts` test file along with the service.
 ```
 
+# 🧩 Angular Components – Interview Questions & Answers
 
+A component is the core building block of Angular applications. Below is a detailed list of commonly asked questions related to Angular components, with clear answers and code examples to help you prepare for interviews.
 
-Would you like me to export this as a `.md` file for easy use in your GitHub repository?
+---
+
+## 1️⃣ What is a component in Angular?
+
+**Answer:**  
+A component controls a specific part of the user interface (UI). It consists of:
+
+- **TypeScript (.ts)** – Contains logic, data, and behavior
+- **HTML (.html)** – Defines the template/view
+- **CSS/SCSS (.css/.scss)** – Styles the component
+
+---
+
+## 2️⃣ How do you generate a new component using Angular CLI?
+
+**Command:**
+```bash
+ng generate component component-name
+# or
+ng g c component-name
+Answer:
+This command creates a new folder containing .ts, .html, .css, and .spec.ts files, and updates the AppModule automatically.
+
+3️⃣ What are the key decorators in a component?
+Answer:
+The @Component() decorator is used to define an Angular component and its metadata like selector, template, and styles.
+
+Example:
+
+ts
+Copy
+Edit
+@Component({
+  selector: 'app-hero',
+  templateUrl: './hero.component.html',
+  styleUrls: ['./hero.component.css']
+})
+export class HeroComponent {}
+4️⃣ What is the purpose of the selector property?
+Answer:
+The selector defines the custom HTML tag that is used to render the component in templates.
+
+Example Usage:
+
+html
+Copy
+Edit
+<!-- If selector is 'app-hero' -->
+<app-hero></app-hero>
+✅ Bonus Tip: Component Structure Overview
+bash
+Copy
+Edit
+src/
+├── app/
+│   ├── hero/
+│   │   ├── hero.component.ts      # Component logic
+│   │   ├── hero.component.html    # Component view
+│   │   ├── hero.component.css     # Component styles
+│   │   └── hero.component.spec.ts # Unit tests
