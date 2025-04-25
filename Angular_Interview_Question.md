@@ -236,9 +236,9 @@ export class AppComponent {
 Interpolation `({{ expression }})` is used to insert data into the text content of HTML elements.
 Property binding `([property])` is used to set values of HTML attributes or DOM properties.
 
-**Example**:
-Interpolation:
-`<h1>{{ title }}</h1>`
-Property Binding:
-`<img [src]="imageUrl" alt="Angular Image">`
+**Example**: <br>
+Interpolation:<br>
+`<h1>{{ title }}</h1>` <br>
+Property Binding:<br>
+`<img [src]="imageUrl" alt="Angular Image">`<br>
 
