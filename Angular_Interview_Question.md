@@ -49,13 +49,13 @@ tsconfig.json → TypeScript compiler configuration
 2. What does main.ts do? <br>
 **Answer**:
 `main.ts` is the entry point of the Angular application. It bootstraps the root module (AppModule), making the application functional.
-
 `platformBrowserDynamic().bootstrapModule(AppModule);`
-3. What is the role of `index.html`? <br>
+
+4. What is the role of `index.html`? <br>
 **Answer**:
 `index.html` is the only HTML file in the project. Angular renders the entire application inside the `<app-root>` tag, which is defined in this file.
 
-4. In what order do Angular files load in the browser? <br>
+5. In what order do Angular files load in the browser? <br>
 **Answer**:
 The loading order is as follows:
 ```ts
@@ -103,7 +103,7 @@ AppModule	The root module. It declares the components and imports necessary depe
 AppComponent	The root component that contains the UI logic for the app.
 
 10. Where should services be created and provided? <br>
-Answer:
+**Answer**:
 Services should be placed in the `services/ folder` and decorated with `@Injectable()`. To make them available globally, use providedIn: `'root'`.
 
 **Answer**:
