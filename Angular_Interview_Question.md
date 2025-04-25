@@ -508,3 +508,35 @@ src/
 │   │   ├── hero.component.css     # Component styles
 │   │   └── hero.component.spec.ts # Unit tests
 ```
+# How to Access input field data
+```bash
+***.html***
+<p>{{display}}</p>
+
+<input type="text" #inputData (input)="handleInput($event)">
+<button (click)="getData(inputData.value)">get </button>
+
+***.ts***
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
+})
+export class AppComponent {
+  count = '';
+
+  handleInput(event: Event) {
+    this.count = (event.target as HTMLInputElement).value;
+    return this.count;
+  }
+  display: any;
+
+  getData<T>(data: T) {
+    this.display = data;
+  }
+}
+
+
+```
