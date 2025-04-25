@@ -1,6 +1,6 @@
-#Interview Question for angular 
+# Interview Question for angular 
 
-##1. Can we let const inside a AppComponent 
+## 1. Can we let const inside a AppComponent 
 ```ts
 export class AppComponent {
   title = 'my-angular';
