@@ -46,16 +46,16 @@ angular.json → Angular workspace configuration
 
 tsconfig.json → TypeScript compiler configuration
 ```
-2. What does main.ts do?
+2. What does main.ts do? <br>
 **Answer**:
 `main.ts` is the entry point of the Angular application. It bootstraps the root module (AppModule), making the application functional.
 
 `platformBrowserDynamic().bootstrapModule(AppModule);`
-3. What is the role of `index.html`?
+3. What is the role of `index.html`? <br>
 **Answer**:
 `index.html` is the only HTML file in the project. Angular renders the entire application inside the `<app-root>` tag, which is defined in this file.
 
-4. In what order do Angular files load in the browser?
+4. In what order do Angular files load in the browser? <br>
 **Answer**:
 The loading order is as follows:
 ```ts
@@ -70,7 +70,7 @@ AppComponent (app.component.ts)
 Templates & Styles (app.component.html, app.component.css)
 ```
 
-5. What is tsconfig.json used for?
+5. What is tsconfig.json used for? <br>
 **Answer**:
 `tsconfig.json` controls how TypeScript compiles the code. It defines compiler options such as target JavaScript version, module system, and strictness.
 
@@ -85,24 +85,24 @@ Example:
 }
 ```
 
-6. Difference between `angular.json`, `package.json`, and `tsconfig.json`?
+6. Difference between `angular.json`, `package.json`, and `tsconfig.json`? <br>
 **Answer**:
 File	Purpose
 `angular.json`	Angular CLI configuration (build options, file paths)
 `tsconfig.json`	TypeScript compiler settings (compiling TypeScript to JavaScript)
 `package.json`	Lists project dependencies & scripts
 
-8. What is the purpose of `polyfills.ts`?
+8. What is the purpose of `polyfills.ts`? <br>
 **Answer**:
 `polyfills.ts` ensures backward compatibility by loading polyfills (such as ES6 features) for older browsers that do not support modern JavaScript features.
 
-9. What’s the difference between AppModule and AppComponent?
+9. What’s the difference between AppModule and AppComponent? <br>
 **Answer**:
 Term	Description
 AppModule	The root module. It declares the components and imports necessary dependencies.
 AppComponent	The root component that contains the UI logic for the app.
 
-10. Where should services be created and provided?
+10. Where should services be created and provided? <br>
 Answer:
 Services should be placed in the `services/ folder` and decorated with `@Injectable()`. To make them available globally, use providedIn: `'root'`.
 
@@ -116,7 +116,7 @@ export class DataService {
 }
 ```
 
-11. Can we use let, const, or functions directly in a component class?
+11. Can we use let, const, or functions directly in a component class? <br>
 **Answer**:
 Yes, you can use let, const, and declare functions within a component class.
 
@@ -130,7 +130,7 @@ export class AppComponent {
 }
 ```
 
-12. What is the use of `environment.ts`?
+12. What is the use of `environment.ts`? <br>
 **Answer**:
 environment.ts is used to store environment-specific settings like API URLs. These values change based on whether the app is running in development or production.
 
