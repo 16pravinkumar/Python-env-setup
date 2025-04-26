@@ -1,8 +1,3 @@
-<h2>{{fun("SS")}}</h2>
-<p>{{currDate }}</p>
-
-
-
 # 📚 Angular Interview Questions and Guide
 
 This guide is designed to help you prepare for Angular-related interview questions, covering topics like component structure, folder hierarchy, and key configuration files.
