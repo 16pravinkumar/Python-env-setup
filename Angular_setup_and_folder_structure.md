@@ -192,4 +192,28 @@ count = signal(10)
 normal method
 count = 10 
 ```
+
+# When to use constructor 
+```bash
+Think of the constructor in Angular like setting up the stage for a play. It's where you prepare everything that the actor (the component) needs before the play starts. But, the constructor is not where the actual acting (like making API calls or showing data) happens.
+
+Here’s an analogy to make it clearer:
+
+Imagine you're preparing for a play:
+The constructor is like getting ready backstage. You set up everything you need: the costumes, the script, the props, etc. But you're not acting yet — you're just getting everything ready.
+
+Once everything is ready backstage, you step on the stage and start the show. In Angular, this is where ngOnInit() comes in. It’s like saying, "Now, the show has started, let’s do the acting!" This is when the actual API calls and other tasks happen.
+
+Why not call APIs in the constructor?
+The constructor is too early: The stage isn’t ready yet, and the show hasn’t started. If you try to do something big like calling an API or showing something on the screen, it might not work properly because Angular hasn’t finished setting up the component yet.
+
+Better control: Using ngOnInit() is like saying, "Now the stage is set, let's start the real action."
+
+Simple Explanation:
+Constructor = Set up things (like getting costumes ready, but not acting yet).
+
+ngOnInit() = Start the show (where you actually perform, like calling APIs and displaying data).
+
+So, in short: Constructor is for preparing things, and ngOnInit() is for starting the action (like calling APIs, showing data, etc.).
+```
  
