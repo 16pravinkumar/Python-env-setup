@@ -226,4 +226,15 @@ If-else condition
 For loop
 Add style
 ngIf, ngFor, ngStyle, ngSwitch, ngClass
+
+***Types of Directives***
+1] Component Directives
+  * The most common type of directive
+  * Used in component template file
+2] Structural Directives
+  * Change the structure of the DOM by adding, removing or manipulating elements.
+   eg ngIf, ngFor, ngSwitch
+3] Attribute Directives
+  * Modify the apperance or behaviour of an exisitng element like css
+   eg ngStyle, ngClass
 ```
