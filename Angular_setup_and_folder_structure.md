@@ -216,4 +216,14 @@ ngOnInit() = Start the show (where you actually perform, like calling APIs and d
 
 So, in short: Constructor is for preparing things, and ngOnInit() is for starting the action (like calling APIs, showing data, etc.).
 ```
- 
+
+ # Directives in angular
+ ```
+Directive is a class that adds additional behavior to elements in your application
+A feature in angular that help you to provide more power to DOM elements
+eg
+If-else condition
+For loop
+Add style
+ngIf, ngFor, ngStyle, ngSwitch, ngClass
+```
