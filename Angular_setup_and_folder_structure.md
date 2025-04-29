@@ -238,3 +238,58 @@ ngIf, ngFor, ngStyle, ngSwitch, ngClass
   * Modify the apperance or behaviour of an exisitng element like css
    eg ngStyle, ngClass
 ```
+
+
+# How to pass data from one page to another in router
+`home.component.html`
+``` 
+<p>home works!</p>
+<a [routerLink]="['/profile']" [queryParams]="{ name: 'Pravin' }">Go to profile</a>
+
+```
+
+`home.component.ts`
+```
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
+@Component({
+  selector: 'app-home',
+  imports: [RouterLink],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
+})
+export class HomeComponent {
+
+}
+
+```
+
+
+`profile.component.html`
+```
+ <p>{{userName}} profile works!</p>
+ ```
+
+
+
+`profile.component.ts`
+```
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
+@Component({
+  selector: 'app-profile',
+  imports: [],
+  templateUrl: './profile.component.html',
+  styleUrl: './profile.component.css'
+})
+export class ProfileComponent {
+  userName : string | null = ''
+  constructor(private route: ActivatedRoute){}
+  ngOnInit(){
+    this.userName = this.route.snapshot.queryParamMap.get('name')
+  }
+}
+
+```
