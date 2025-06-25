@@ -406,3 +406,15 @@ Ensures platform independence
 Avoids security issues (e.g., XSS)
 
 
+---
+
+🔹 What is @HostListener?
+It is a decorator that lets you listen to DOM events (like clicks, mouse moves, key presses) on the element where your directive or component is placed.
+
+Think of it like this:
+
+"Hey Angular, when someone clicks/touches/presses something on this element, please run this function!"
+
+🔧 Where is it used?
+Usually inside a directive or component class.
+
