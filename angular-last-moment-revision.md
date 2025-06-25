@@ -395,4 +395,14 @@ ngOnDestroy() {
 
 ---
 
+# Render2 service 
+## In Angular, the Renderer2 service is used to safely manipulate the DOM. It is especially useful for keeping your app compatible with different platforms (like server-side rendering or web workers).
+
+✅ Why use Renderer2 instead of direct DOM manipulation?
+Prevents direct access to native DOM
+
+Ensures platform independence
+
+Avoids security issues (e.g., XSS)
+
 
