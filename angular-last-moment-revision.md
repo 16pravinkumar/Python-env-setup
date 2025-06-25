@@ -418,3 +418,10 @@ Think of it like this:
 🔧 Where is it used?
 Usually inside a directive or component class.
 
+---
+🧩 What is @HostBinding in Angular?
+@HostBinding is a decorator in Angular used to bind a property or attribute of the host element (the HTML element that your directive or component is attached to).
+
+🛠️ Real-World Meaning:
+Imagine your directive or component automatically adds a class, style, or attribute to the element it's on — that's what @HostBinding lets you do.
+----
