@@ -189,3 +189,210 @@ log(value: string) {
 | `@ContentChildren()` | All projected elems | All cards from envelope            | Access many projected elements        |
 
 ---
+
+# Angular Lifecycle Hooks - Simple Guide
+
+## Why Are Lifecycle Hooks Important?
+
+Hooks let you run your code **at the right time** during the life of a component or directive.
+
+---
+
+## 1. ngOnInit()
+
+### When it runs:
+
+* After Angular first displays the component's data-bound properties.
+
+### Common use:
+
+* Fetch data from an API
+* Set default values
+
+### Example:
+
+```ts
+ngOnInit() {
+  this.getData();
+}
+```
+
+---
+
+## 2. ngOnChanges()
+
+### When it runs:
+
+* When a component receives new @Input values from its parent.
+
+### Common use:
+
+* React when a parent passes new data
+
+### Example:
+
+```ts
+@Input() userName: string;
+
+ngOnChanges(changes: SimpleChanges) {
+  console.log('New userName:', changes.userName.currentValue);
+}
+```
+
+### Note:
+
+* It always works with `@Input()`.
+
+---
+
+## 3. ngDoCheck()
+
+### When it runs:
+
+* Every time Angular runs change detection (many times!)
+
+### Common use:
+
+* Manually detect and react to changes not caught by `OnChanges`
+
+### Example:
+
+```ts
+ngDoCheck() {
+  console.log('Change detection running');
+}
+```
+
+### Caution:
+
+* Can affect performance if used wrongly.
+
+---
+
+## 4. ngAfterContentInit()
+
+### When it runs:
+
+* After Angular projects external content (ng-content) into the component
+
+### Common use:
+
+* Perform actions after content is added
+
+### Example:
+
+```ts
+ngAfterContentInit() {
+  console.log('Content projected');
+}
+```
+
+---
+
+## 5. ngAfterContentChecked()
+
+### When it runs:
+
+* After Angular checks the content projected into the component
+
+### Common use:
+
+* Detect content changes
+
+### Example:
+
+```ts
+ngAfterContentChecked() {
+  console.log('Content checked');
+}
+```
+
+---
+
+## 6. ngAfterViewInit()  **(Component-only)**
+
+### When it runs:
+
+* After the component's view (template) and child views are initialized
+
+### Common use:
+
+* Access elements with ViewChild
+
+### Example:
+
+```ts
+@ViewChild('myDiv') div: ElementRef;
+
+ngAfterViewInit() {
+  console.log(this.div.nativeElement);
+}
+```
+
+---
+
+## 7. ngAfterViewChecked()  **(Component-only)**
+
+### When it runs:
+
+* After Angular checks the component and its child views
+
+### Common use:
+
+* React to view updates
+
+### Example:
+
+```ts
+ngAfterViewChecked() {
+  console.log('View checked');
+}
+```
+
+---
+
+## 8. ngOnDestroy()
+
+### When it runs:
+
+* Just before Angular destroys the component or directive
+
+### Common use:
+
+* Unsubscribe from Observables
+* Clear timers
+
+### Example:
+
+```ts
+ngOnDestroy() {
+  clearInterval(this.timer);
+}
+```
+
+---
+
+## Which Hooks Should You Use?
+
+| Hook                  | Use When                                                            |
+| --------------------- | ------------------------------------------------------------------- |
+| ngOnInit              | To run code when component is first created                         |
+| ngOnChanges           | To react to changes in @Input()                                     |
+| ngDoCheck             | To write custom change detection logic                              |
+| ngAfterContentInit    | To work with content inside <ng-content>                            |
+| ngAfterContentChecked | To know when content is checked again                               |
+| ngAfterViewInit       | To access or manipulate view/template elements (only in components) |
+| ngAfterViewChecked    | To know when the view is checked again (only in components)         |
+| ngOnDestroy           | To clean up tasks before the component/directive is removed         |
+
+---
+
+## Final Notes:
+
+* You don’t need to use **all** hooks in every component.
+* Use only the ones you need.
+* For simple components, `ngOnInit()` and `ngOnDestroy()` are usually enough.
+
+---
+
+
